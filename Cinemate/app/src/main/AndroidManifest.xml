@@ -6,6 +6,8 @@
     <!-- Захват сотовой сети для режима «Интернет для каталога» -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Установка скачанных обновлений APK -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <!-- HTTP для локальной связи с приёмником на TV Box -->
     <application

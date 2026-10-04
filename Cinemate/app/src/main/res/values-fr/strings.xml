@@ -289,4 +289,6 @@
     <string name="cache_mb">Mo</string>
     <string name="cache_usage">Utilisé : %1$d sur %2$d Mo</string>
     <string name="cd_view_toggle">Affichage</string>
+    <string name="update_check_title">Mises à jour</string>
+    <string name="update_check_now">Vérifier maintenant</string>
 </resources>

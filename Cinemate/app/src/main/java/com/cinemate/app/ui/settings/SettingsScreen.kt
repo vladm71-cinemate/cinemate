@@ -101,6 +101,7 @@ fun SettingsScreen(
     val updateInfo by viewModel.updateInfo.collectAsStateWithLifecycle()
     val updateStatus by viewModel.updateStatus.collectAsStateWithLifecycle()
     val downloading by viewModel.downloading.collectAsStateWithLifecycle()
+    val checkingUpdate by viewModel.checkingUpdate.collectAsStateWithLifecycle()
     val dnsMode by viewModel.dnsMode.collectAsStateWithLifecycle()
     val dnsList by viewModel.dnsList.collectAsStateWithLifecycle()
     val dnsActive by viewModel.dnsActive.collectAsStateWithLifecycle()
@@ -538,6 +539,24 @@ fun SettingsScreen(
         HorizontalDivider(Modifier.padding(vertical = 12.dp))
 
         // ---------- Обновление приложения ----------
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                stringResource(R.string.update_check_title),
+                style = MaterialTheme.typography.titleMedium,
+                modifier = Modifier.weight(1f)
+            )
+            OutlinedButton(
+                onClick = { viewModel.checkUpdateNow() },
+                enabled = !checkingUpdate
+            ) {
+                if (checkingUpdate) {
+                    CircularProgressIndicator(modifier = Modifier.size(14.dp), strokeWidth = 2.dp)
+                    Spacer(Modifier.width(6.dp))
+                }
+                Text(stringResource(R.string.update_check_now), maxLines = 1)
+            }
+        }
+        Spacer(Modifier.height(8.dp))
         updateInfo?.let { upd ->
             Surface(
                 shape = RoundedCornerShape(12.dp),

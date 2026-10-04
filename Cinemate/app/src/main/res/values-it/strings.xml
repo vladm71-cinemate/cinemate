@@ -289,4 +289,6 @@
     <string name="cache_mb">MB</string>
     <string name="cache_usage">Usata: %1$d di %2$d MB</string>
     <string name="cd_view_toggle">Vista</string>
+    <string name="update_check_title">Aggiornamenti</string>
+    <string name="update_check_now">Verifica ora</string>
 </resources>

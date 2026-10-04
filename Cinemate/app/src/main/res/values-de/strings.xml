@@ -289,4 +289,6 @@
     <string name="cache_mb">MB</string>
     <string name="cache_usage">Belegt: %1$d von %2$d MB</string>
     <string name="cd_view_toggle">Ansicht</string>
+    <string name="update_check_title">Aktualisierung</string>
+    <string name="update_check_now">Jetzt prüfen</string>
 </resources>

@@ -348,6 +348,19 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
+    /** Ручная проверка сейчас — мимо суточного окна. */
+    private val _checkingUpdate = MutableStateFlow(false)
+    val checkingUpdate: StateFlow<Boolean> = _checkingUpdate.asStateFlow()
+
+    fun checkUpdateNow() {
+        if (_checkingUpdate.value) return
+        viewModelScope.launch {
+            _checkingUpdate.value = true
+            _updateInfo.value = updateChecker.checkForUpdate()
+            _checkingUpdate.value = false
+        }
+    }
+
     fun downloadAndInstall() {
         val info = _updateInfo.value ?: return
         if (_downloading.value) return
@@ -356,8 +369,15 @@ class SettingsViewModel @Inject constructor(
             _updateStatus.value = null
             val file = updateChecker.downloadApk(info)
             _downloading.value = false
-            _updateStatus.value = if (file != null && updateChecker.installApk(file)) null
-            else appContext.getString(R.string.update_failed)
+            if (file == null) {
+                _updateStatus.value = appContext.getString(R.string.update_failed) +
+                        (updateChecker.lastError.takeIf { it.isNotBlank() }?.let { " ($it)" } ?: "")
+            } else {
+                val installed = updateChecker.installApk(file)
+                _updateStatus.value = if (installed) null
+                else appContext.getString(R.string.update_failed) +
+                        " (" + (updateChecker.lastError.ifBlank { "install failed" }) + ")"
+            }
         }
     }
 

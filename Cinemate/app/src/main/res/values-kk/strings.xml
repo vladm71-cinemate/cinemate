@@ -289,4 +289,6 @@
     <string name="cache_mb">МБ</string>
     <string name="cache_usage">Толтырылған: %1$d / %2$d МБ</string>
     <string name="cd_view_toggle">Көрініс</string>
+    <string name="update_check_title">Жаңарту</string>
+    <string name="update_check_now">Қазір тексеру</string>
 </resources>

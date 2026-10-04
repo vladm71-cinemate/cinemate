@@ -304,4 +304,6 @@
     <string name="cache_mb">МБ</string>
     <string name="cache_usage">Занято: %1$d из %2$d МБ</string>
     <string name="cd_view_toggle">Вид списка</string>
+    <string name="update_check_title">Обновление</string>
+    <string name="update_check_now">Проверить сейчас</string>
 </resources>

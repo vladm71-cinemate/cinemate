@@ -317,4 +317,6 @@
     <string name="cache_mb">MB</string>
     <string name="cache_usage">Used: %1$d of %2$d MB</string>
     <string name="cd_view_toggle">List view</string>
+    <string name="update_check_title">Updates</string>
+    <string name="update_check_now">Check now</string>
 </resources>

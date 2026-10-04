@@ -1,6 +1,7 @@
 package com.cinemate.app.util
 
 import android.content.Context
+import android.util.Log
 import android.content.Intent
 import androidx.core.content.FileProvider
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -133,25 +134,43 @@ class UpdateChecker @Inject constructor(
     // ---------- Скачивание и установка ----------
 
     /** Скачать APK во внутреннюю папку. Возвращает файл или null (сбой). */
+    @Volatile var lastError: String = ""
+
     suspend fun downloadApk(info: UpdateInfo): File? = withContext(Dispatchers.IO) {
+        lastError = ""
         try {
             val dir = File(context.filesDir, "updates").apply { mkdirs() }
             val file = File(dir, "cinemate-update-${info.versionCode}.apk")
 
             val conn = URL(info.downloadUrl).openConnection() as HttpURLConnection
+            conn.instanceFollowRedirects = true
             conn.connectTimeout = TIMEOUT_MS
-            conn.readTimeout = 60_000
+            conn.readTimeout = 120_000
             conn.setRequestProperty("User-Agent", "Cinemate-Update")
 
-            if (conn.responseCode !in 200..299) return@withContext null
+            val code = conn.responseCode
+            if (code !in 200..299) {
+                lastError = "HTTP $code"
+                return@withContext null
+            }
 
+            val total = conn.contentLengthLong
             conn.inputStream.use { input ->
                 file.outputStream().use { output ->
                     input.copyTo(output, bufferSize = 64 * 1024)
                 }
             }
+            val size = file.length()
+            if (total > 0 && size < total) {
+                lastError = "недокачано: $size из $total"
+                file.delete()
+                return@withContext null
+            }
+            Log.i("UpdateChecker", "скачано ${size / (1024 * 1024)} МБ -> ${file.name}")
             file
         } catch (e: Exception) {
+            lastError = "${e.javaClass.simpleName}: ${e.message}"
+            Log.w("UpdateChecker", "downloadApk error: ${e.message}")
             null
         }
     }
@@ -159,22 +178,42 @@ class UpdateChecker @Inject constructor(
     /** Запустить системный установщик для скачанного APK. */
     fun installApk(file: File): Boolean {
         return try {
+            if (!file.exists() || file.length() == 0L) {
+                lastError = "файл не существует"
+                return false
+            }
             val uri = FileProvider.getUriForFile(
                 context,
                 "${context.packageName}.fileprovider",
                 file
             )
-            val intent = Intent(Intent.ACTION_INSTALL_PACKAGE).apply {
+            Log.i("UpdateChecker", "installApk: uri=${'$'}uri, size=${'$'}{file.length()}")
+
+            val installer = Intent(Intent.ACTION_INSTALL_PACKAGE).apply {
                 data = uri
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
-            context.startActivity(intent)
+            try {
+                context.startActivity(installer)
+                Log.i("UpdateChecker", "installApk: установщик запущен")
+            } catch (e: Exception) {
+                Log.w("UpdateChecker", "INSTALL_PACKAGE не сработал (${e.message}) — fallback VIEW")
+                val view = Intent(Intent.ACTION_VIEW).apply {
+                    setDataAndType(uri, "application/vnd.android.package-archive")
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
+                context.startActivity(view)
+            }
             true
         } catch (e: Exception) {
+            lastError = "${e.javaClass.simpleName}: ${e.message}"
+            Log.e("UpdateChecker", "installApk failed: ${e.message}")
             false
         }
     }
+
 
     /** Удалить скачанные ранее APK (при новом запуске). */
     fun cleanup() {

@@ -289,4 +289,6 @@
     <string name="cache_mb">MB</string>
     <string name="cache_usage">Usado: %1$d de %2$d MB</string>
     <string name="cd_view_toggle">Vista</string>
+    <string name="update_check_title">Actualizaciones</string>
+    <string name="update_check_now">Comprobar ahora</string>
 </resources>
