@@ -558,7 +558,6 @@ fun SettingsScreen(
         }
         Spacer(Modifier.height(8.dp))
 
-        // Статус ручной проверки — виден всегда (обновлений нет / сбой)
         updateStatus?.let { st ->
             Text(
                 st,
