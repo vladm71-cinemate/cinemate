@@ -356,8 +356,12 @@ class SettingsViewModel @Inject constructor(
         if (_checkingUpdate.value) return
         viewModelScope.launch {
             _checkingUpdate.value = true
-            _updateInfo.value = updateChecker.checkForUpdate()
+            val found = updateChecker.checkForUpdate()
+            _updateInfo.value = found
             _checkingUpdate.value = false
+            _updateStatus.value = if (found == null) {
+                appContext.getString(R.string.update_up_to_date)
+            } else null
         }
     }
 

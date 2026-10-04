@@ -291,4 +291,5 @@
     <string name="cd_view_toggle">Ansicht</string>
     <string name="update_check_title">Aktualisierung</string>
     <string name="update_check_now">Jetzt prüfen</string>
+    <string name="update_up_to_date">Du nutzt die neueste Version</string>
 </resources>

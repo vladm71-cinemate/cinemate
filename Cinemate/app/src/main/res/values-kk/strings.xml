@@ -291,4 +291,5 @@
     <string name="cd_view_toggle">Көрініс</string>
     <string name="update_check_title">Жаңарту</string>
     <string name="update_check_now">Қазір тексеру</string>
+    <string name="update_up_to_date">Соңғы нұсқаны қолданасыз</string>
 </resources>

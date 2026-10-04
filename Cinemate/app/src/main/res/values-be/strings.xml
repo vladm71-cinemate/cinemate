@@ -291,4 +291,5 @@
     <string name="cd_view_toggle">Від спісу</string>
     <string name="update_check_title">Абнаўленне</string>
     <string name="update_check_now">Праверыць зараз</string>
+    <string name="update_up_to_date">Вы выкарыстоўваеце апошнюю версію</string>
 </resources>
