@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_waiting">Server is running. Waiting for commands from the phone…</string>
+    <string name="btn_diag">Port diagnostics</string>
+    <string name="btn_change_port">Change port</string>
+    <string name="diag_title">Port diagnostics
+Active: %1$s</string>
+    <string name="diag_hint">Set the chosen port in the phone app too
+(Settings → Watch on TV → Port).</string>
+    <string name="port_title">Change port
+Current: %1$s</string>
+    <string name="port_now"> (currently running)</string>
+    <string name="port_busy"> — busy</string>
+    <string name="port_free"> — free</string>
+    <string name="port_manual">Enter manually…</string>
+    <string name="port_manual_title">Manual port</string>
+    <string name="port_hint">1024–65535</string>
+    <string name="port_apply">Apply</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_close">Close</string>
+    <string name="common_error">⚠ error: %1$s</string>
+    <string name="port_changed">Port changed to %1$d</string>
+    <string name="port_free_short">free</string>
+    <string name="port_free_recommended">free ← recommended</string>
+    <string name="port_busy_chosen">busy (your choice)</string>
+    <string name="port_busy_owner">busy (%1$s)</string>
+    <string name="port_busy_plain">busy</string>
+    <string name="port_receiver_here">← Cinemate Receiver is running here</string>
+    <string name="diag_free_list">Free: %1$s</string>
+    <string name="diag_no_free">No free ports found</string>
+    <string name="log_update_title">New version available: %1$s</string>
+    <string name="log_update_btn">Download and install</string>
+    <string name="log_update_downloading">Downloading…</string>
+    <string name="log_update_confirm">Confirm the install in the dialog</string>
+    <string name="log_update_failed">Failed — retry</string>
+    <string name="tv_sort_seeds">by seeds</string>
+    <string name="tv_sort_size">by size</string>
+    <string name="tv_sort_date">by date</string>
+    <string name="tv_sort_label">Sort: %1$s  ·  %2$d %3$s</string>
+    <string name="tv_footer">OK — watch in TorrServe MatriX   ·   Menu — sorting   ·   Back — exit</string>
+    <string name="torrent_default_title">Torrents</string>
+    <string name="torrent_default_item">torrent</string>
+
+    <plurals name="tv_items">
+        <item quantity="one">torrent</item>
+        <item quantity="other">torrents</item>
+    </plurals>
+    <string name="filter_all">All</string>
+</resources>

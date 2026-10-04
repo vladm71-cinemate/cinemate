@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CinemateReceiver</string>
+
+    <string name="server_title">Cinemate Receiver</string>
+    <string name="status_waiting">Сервер работает. Ожидание команд с телефона…</string>
+    <string name="btn_diag">Диагностика портов</string>
+    <string name="btn_change_port">Сменить порт</string>
+    <string name="diag_title">Диагностика портов\nАктуальный: %1$s</string>
+    <string name="diag_hint">Выбранный порт укажи и в приложении на телефоне\n(Настройки → Просмотр на ТВ → Порт).</string>
+    <string name="port_title">Сменить порт\nТекущий: %1$s</string>
+    <string name="port_now"> (сейчас работает)</string>
+    <string name="port_busy"> — занят</string>
+    <string name="port_free"> — свободен</string>
+    <string name="port_manual">Ввести вручную…</string>
+    <string name="port_manual_title">Порт вручную</string>
+    <string name="port_hint">1024–65535</string>
+    <string name="port_apply">Применить</string>
+    <string name="common_cancel">Отмена</string>
+    <string name="common_close">Закрыть</string>
+    <string name="common_error">⚠ ошибка: %1$s</string>
+    <string name="port_changed">Порт изменён на %1$d</string>
+    <string name="port_free_short">свободен</string>
+    <string name="port_free_recommended">свободен ← рекомендуется</string>
+    <string name="port_busy_chosen">занят (выбран тобой)</string>
+    <string name="port_busy_owner">занят (%1$s)</string>
+    <string name="port_busy_plain">занят</string>
+    <string name="port_receiver_here">← работает Cinemate Receiver</string>
+    <string name="diag_free_list">Свободные: %1$s</string>
+    <string name="diag_no_free">Свободных портов не найдено</string>
+    <string name="log_update_title">Доступна новая версия: %1$s</string>
+    <string name="log_update_btn">Скачать и установить</string>
+    <string name="log_update_downloading">Скачиваю…</string>
+    <string name="log_update_confirm">Подтвердите установку в диалоге</string>
+    <string name="log_update_failed">Не удалось — повторить</string>
+    <string name="tv_sort_seeds">по сидам</string>
+    <string name="tv_sort_size">по размеру</string>
+    <string name="tv_sort_date">по дате</string>
+    <string name="tv_sort_label">Сортировка: %1$s  ·  %2$d %3$s</string>
+    <string name="tv_footer">ОК — смотреть в TorrServe MatriX   ·   Меню — сортировка   ·   Назад — выход</string>
+    <string name="torrent_default_title">Раздачи</string>
+    <string name="torrent_default_item">раздача</string>
+
+    <plurals name="tv_items">
+        <item quantity="one">раздача</item>
+        <item quantity="few">раздачи</item>
+        <item quantity="many">раздач</item>
+        <item quantity="other">раздач</item>
+    </plurals>
+    <string name="filter_all">Все</string>
+</resources>

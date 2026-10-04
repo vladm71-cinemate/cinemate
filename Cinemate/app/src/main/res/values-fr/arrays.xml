@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>États-Unis</item><item>Royaume-Uni</item><item>Russie</item><item>France</item><item>Allemagne</item>
+        <item>Italie</item><item>Espagne</item><item>Inde</item><item>Japon</item><item>Corée du Sud</item>
+        <item>Chine</item><item>Hong Kong</item><item>Canada</item><item>Australie</item><item>Brésil</item>
+        <item>Mexique</item><item>Argentine</item><item>Suède</item><item>Norvège</item><item>Danemark</item>
+        <item>Finlande</item><item>Pologne</item><item>Turquie</item><item>Thaïlande</item><item>Iran</item>
+        <item>Égypte</item><item>Émirats arabes unis</item><item>Arabie saoudite</item><item>Ukraine</item><item>Biélorussie</item>
+    </string-array>
+    <string-array name="help_main">
+        <item>Accueil</item>
+        <item>Catalogue de films et séries. En haut le sélecteur Films/Séries, dessous les filtres : année, genres, pays et tri. Le bouton Pays : Masqués — ne pas afficher les pays choisis ; Seulement — afficher exclusivement eux. Faites défiler vers le bas pour charger la suite.</item>
+        <item>Affichage</item>
+        <item>Grille de 2/3 par ligne ou liste — dans les Réglages, Vue d’accueil. S’applique aussi à la filmographie des acteurs.</item>
+        <item>Recherche</item>
+        <item>Russe et anglais. L’historique garde jusqu’à 50 requêtes ; un appui relance la recherche.</item>
+        <item>Fiche film</item>
+        <item>Favoris, Attendre (films non sortis), Suivre (séries). Dessous : Plus d’infos, Casting, Similaires, Mots-clés. Le bouton Regarder — torrents.</item>
+        <item>Langue de l’app</item>
+        <item>Interface en 9 langues. Choix dans les Réglages ; Comme le système utilise la langue du téléphone.</item>
+        <item>Langue des descriptions (TMDb)</item>
+        <item>Langue dans laquelle TMDb renvoie descriptions et genres. Si la traduction manque, TMDb renvoie l’anglais.</item>
+        <item>Vus</item>
+        <item>Historique des lectures TV via Regarder. Un appui sur une ligne la supprime.</item>
+        <item>Sauvegarde des réglages</item>
+        <item>Export/Import de tous les réglages en un fichier (changement de téléphone) : nœuds, proxys, DNS, adresses du box, boutons, clés, vue, mode internet du catalogue. L’historique de recherche et Vus ne sont pas transférés.</item>
+        <item>Mise à jour de l’app</item>
+        <item>Une fois par jour l’app vérifie discrètement GitHub Releases. Si une nouvelle version existe, une carte avec Télécharger et installer apparaît dans les Réglages : l’APK est téléchargé et l’installateur système s’ouvre — il ne reste qu’à confirmer. Rien ne s’installe sans votre confirmation.</item>
+    </string-array>
+    <string-array name="help_bypass">
+        <item>Étape 1 — DNS sur la box internet</item>
+        <item>Mettez sur votre routeur les DNS 8.8.8.8 et 1.1.1.1 (ou 76.76.2.11 — ControlD) — souvent cela suffit et vaut pour tous les appareils de la maison. C’est ce que fait l’auteur.</item>
+        <item>DNS dans l’app</item>
+        <item>Mode Auto : teste tous les DNS (intégrés + les vôtres), le meilleur devient actif, avec bascule automatique en cas d’échec. DNS perso : uniquement vos adresses. Désactiver la substitution : le DNS n’est pas touché — les requêtes passent par la box/le fournisseur comme pour toute app (suffit quand il n’y a pas de blocages). Le bouton Vérifier DNS affiche chaque entrée avec son temps ; la première ligne est le DNS système du fournisseur, pour comparaison.</item>
+        <item>Proxy TMDb</item>
+        <item>Liste de proxys perso sans limite (adresse avec schéma : https://… ou http://…). L’app trouve un proxy vivant et s’y tient tant qu’il marche ; s’il meurt, elle passe au suivant (les vôtres + intégrés). Le mode Toujours les vérifie aussi au démarrage. Votre propre Worker en 5 minutes : workers.cloudflare.com → Create Worker → code : addEventListener(\"fetch\", e => { e.respondWith(fetch(new URL(e.request.url).pathname.slice(1) + new URL(e.request.url).search, { headers: e.request.headers })) }); → Deploy → adresse dans le champ.</item>
+        <item>Internet du catalogue</item>
+        <item>Wi-Fi / Réseau mobile. Mode Réseau mobile : le trafic TMDb passe par les données mobiles même si le téléphone est en Wi-Fi (DPI sévère du fournisseur maison). Le Wi-Fi n’est pas coupé — le lien avec le TV Box survit. Attention à la consommation mobile.</item>
+    </string-array>
+    <string-array name="help_tv">
+        <item>Où lire</item>
+        <item>TV Box ou ce téléphone (TorrServe MatriX requis — le lecteur se choisit dans ses réglages).</item>
+        <item>Boutons télécommande (yeux 1–4)</item>
+        <item>Quatre boutons colorés sur la fiche. Chacun lance SA propre app sur le box — comme les boutons Netflix d’une télécommande. Attribution depuis la liste des apps prise directement sur le box.</item>
+        <item>Regarder</item>
+        <item>Recherche de torrents via les nœuds ; appui — lecture via TorrServe MatriX. La liste peut s’afficher sur le téléphone ou la TV (navigation à la télécommande, OK — lire, Menu — tri seeds/taille/date). Si le nœud actif tombe, bascule automatique sur un nœud vivant qui devient l’actif. Les puces Saison et 1080p au-dessus de la liste filtrent les torrents en cascade : choisir une saison resserre les qualités, choisir une qualité resserre les saisons.</item>
+        <item>Nœuds de torrents</item>
+        <item>Nœud actif par bouton radio ; Tout vérifier montre l’activité et le nombre de torrents. On peut ajouter son nœud.</item>
+        <item>Fermer les apps précédentes</item>
+        <item>Au lancement d’une nouvelle app sur le box, les précédentes sont fermées — rien ne s’accumule en arrière-plan.</item>
+        <item>Le box ne répond pas</item>
+        <item>1) Le récepteur est-il ouvert sur le box ? 2) Port 8080 ? 3) Même réseau ? 4) Désactivez l’AP Isolation du routeur. 5) « Trouver IP ».</item>
+        <item>Box injoignable après redémarrage du routeur</item>
+        <item>Le routeur a pu changer l’IP du box (DHCP). Solution : réservez l’IP du box dans le routeur (réservation DHCP) ou appuyez sur Trouver IP.</item>
+        <item>Récepteur injoignable après redémarrage du box</item>
+        <item>Ouvrez le récepteur manuellement une fois après l’installation (limitation Android) — ensuite l’auto-démarrage fonctionne seul.</item>
+        <item>Installer le récepteur sur Android TV</item>
+        <item>Sur Sony/TCL/Philips/Xiaomi TV et Chromecast avec Google TV : autorisez l’installation de sources inconnues pour votre gestionnaire de fichiers, installez l’APK du récepteur, ouvrez-le une fois. L’icône apparaîtra dans la liste des apps du téléviseur. Désactivez la minuterie de veille (Réglages appareil → Veille) pour que le serveur tourne la nuit. Le port se lit sur l’écran du récepteur et se saisit dans l’app du téléphone. Le récepteur se met aussi à jour tout seul : à une nouvelle version correspond une carte Télécharger et installer sur son écran.</item>
+    </string-array>
+</resources>

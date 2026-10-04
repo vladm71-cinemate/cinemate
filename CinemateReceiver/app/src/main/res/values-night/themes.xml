@@ -1,0 +1,6 @@
+<resources>
+    <!-- Тёмная тема — та же AppCompat-тема (DayNight сама разрулит, но файл нужен для консистентности). -->
+    <style name="Base.Theme.CinemateReceiver" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="Theme.CinemateReceiver" parent="Base.Theme.CinemateReceiver" />
+</resources>

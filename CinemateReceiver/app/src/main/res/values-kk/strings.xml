@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_waiting">Сервер жұмыс істейді. Телефоннан команда күтуде…</string>
+    <string name="btn_diag">Порт диагностикасы</string>
+    <string name="btn_change_port">Портты ауыстыру</string>
+    <string name="diag_title">Порт диагностикасы
+Ағымдағы: %1$s</string>
+    <string name="diag_hint">Таңдалған портты телефон қосымшасына да жазыңыз
+(Параметрлер → ТВ-де көру → Порт).</string>
+    <string name="port_title">Портты ауыстыру
+Ағымдағы: %1$s</string>
+    <string name="port_now"> (қазір жұмыс істейді)</string>
+    <string name="port_busy"> — бос емес</string>
+    <string name="port_free"> — бос</string>
+    <string name="port_manual">Қолмен енгізу…</string>
+    <string name="port_manual_title">Порт қолмен</string>
+    <string name="port_hint">1024–65535</string>
+    <string name="port_apply">Қолдану</string>
+    <string name="common_cancel">Болдырмау</string>
+    <string name="common_close">Жабу</string>
+    <string name="common_error">⚠ қате: %1$s</string>
+    <string name="port_changed">Порт %1$d етіп өзгертілді</string>
+    <string name="port_free_short">бос</string>
+    <string name="port_free_recommended">бос ← ұсынылады</string>
+    <string name="port_busy_chosen">бос емес (сіздің таңдауыңыз)</string>
+    <string name="port_busy_owner">бос емес (%1$s)</string>
+    <string name="port_busy_plain">бос емес</string>
+    <string name="port_receiver_here">← мұнда Cinemate Receiver жұмыс істейді</string>
+    <string name="diag_free_list">Бос: %1$s</string>
+    <string name="diag_no_free">Бос порт табылмады</string>
+    <string name="log_update_title">Жаңа нұсқа қолжетімді: %1$s</string>
+    <string name="log_update_btn">Жүктеп орнату</string>
+    <string name="log_update_downloading">Жүктелуде…</string>
+    <string name="log_update_confirm">Орнатуды диалогта растаңыз</string>
+    <string name="log_update_failed">Істемеді — қайталау</string>
+    <string name="tv_sort_seeds">сид бойынша</string>
+    <string name="tv_sort_size">өлшемі бойынша</string>
+    <string name="tv_sort_date">күні бойынша</string>
+    <string name="tv_sort_label">Реттеу: %1$s  ·  %2$d %3$s</string>
+    <string name="tv_footer">ОК — TorrServe MatriX-те көру   ·   Меню — реттеу   ·   Артқа — шығу</string>
+    <string name="torrent_default_title">Торренттер</string>
+    <string name="torrent_default_item">торрент</string>
+
+    <plurals name="tv_items">
+        <item quantity="other">торрент</item>
+    </plurals>
+    <string name="filter_all">Барлығы</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>USA</item><item>United Kingdom</item><item>Russia</item><item>France</item><item>Germany</item>
+        <item>Italy</item><item>Spain</item><item>India</item><item>Japan</item><item>South Korea</item>
+        <item>China</item><item>Hong Kong</item><item>Canada</item><item>Australia</item><item>Brazil</item>
+        <item>Mexico</item><item>Argentina</item><item>Sweden</item><item>Norway</item><item>Denmark</item>
+        <item>Finland</item><item>Poland</item><item>Turkey</item><item>Thailand</item><item>Iran</item>
+        <item>Egypt</item><item>UAE</item><item>Saudi Arabia</item><item>Ukraine</item><item>Belarus</item>
+    </string-array>
+    <string-array name="help_main">
+        <item>Home</item>
+        <item>Movies and TV catalog. Movies/TV toggle on top, below the filters: year, genres, countries and sorting. The Countries button: Hide — do not show the selected countries; Only — show exclusively them. Scroll down to load more.</item>
+        <item>Layout</item>
+        <item>Grid of 2/3 per row or list — in Settings, Home layout. Also applied to actor filmography.</item>
+        <item>Search</item>
+        <item>Russian and English. History keeps up to 50 queries; tap an entry to search again.</item>
+        <item>Movie page</item>
+        <item>Favorites, Await (for unreleased movies), Track (for shows). Below: More info, Cast, Similar, Keywords. The Watch button — torrents.</item>
+        <item>App language</item>
+        <item>Interface in 9 languages. Chosen in Settings; Follow system uses the phone language.</item>
+        <item>Description language (TMDb)</item>
+        <item>The language TMDb returns descriptions and genres in. If a translation is missing, TMDb returns English.</item>
+        <item>Watched</item>
+        <item>History of plays on TV via Watch. Tap a row to delete it.</item>
+        <item>Settings backup</item>
+        <item>Export/Import all settings as one file (move to a new phone): nodes, proxies, DNS, box addresses, buttons, keys, layout, catalog internet mode. Search history and Watched are not transferred.</item>
+        <item>App updates</item>
+        <item>Once a day the app quietly checks GitHub Releases. When a new version is out, a card with a Download and install button appears in Settings: the APK is downloaded and the system installer opens — just confirm. Nothing is installed without your confirmation.</item>
+    </string-array>
+    <string-array name="help_bypass">
+        <item>Step one — DNS on the router</item>
+        <item>Set DNS 8.8.8.8 and 1.1.1.1 (or 76.76.2.11 — ControlD) on your router — often that is enough and it works for every device at home. That is what the author did.</item>
+        <item>DNS in the app</item>
+        <item>Auto mode: tests all DNS entries (built-in + yours), the best becomes active, with automatic switchover on failures. Custom DNS: only your addresses. Disable override: DNS is not touched — requests go through your router/provider like any app (enough when there are no blocks). The Check DNS button shows each entry with timing; the first line is the system DNS of your provider for comparison.</item>
+        <item>TMDb proxy</item>
+        <item>A list of your own proxies with no limit (address with scheme: https://… or http://…). The app finds a working one and sticks to it while it works; if it dies, it tries the next one (yours + built-in). The Always mode also checks proxies at startup. Your own Worker in 5 minutes: workers.cloudflare.com → Create Worker → code: addEventListener(\"fetch\", e => { e.respondWith(fetch(new URL(e.request.url).pathname.slice(1) + new URL(e.request.url).search, { headers: e.request.headers })) }); → Deploy → put the address in the field.</item>
+        <item>Catalog internet</item>
+        <item>Wi-Fi / Mobile network. Mobile network mode: TMDb traffic goes over cellular even when the phone is on Wi-Fi (harsh DPI of the home provider). Wi-Fi is not disconnected — the TV Box link survives. Mind mobile data usage.</item>
+    </string-array>
+    <string-array name="help_tv">
+        <item>Where to play</item>
+        <item>TV Box or this phone (TorrServe MatriX needed — the player is chosen in its settings).</item>
+        <item>Remote buttons (eyes 1–4)</item>
+        <item>Four colored buttons on a movie page. Each launches ITS OWN app on the box — like Netflix buttons on a remote. Assign them from the app list taken right from the box.</item>
+        <item>Watch</item>
+        <item>Torrent search across nodes; tap — play via TorrServe MatriX. The list can be shown on the phone or on TV (scroll with the remote, OK — play, Menu — sort by seeds/size/date). If the active node fails it auto-switches to a live one and it becomes selected. The Season and 1080p chips above the list filter torrents as a cascade: picking a season narrows qualities, picking a quality narrows seasons.</item>
+        <item>Torrent nodes</item>
+        <item>Active node — by radio button; Check all shows liveness and the number of torrents. You can add your own node.</item>
+        <item>Close previous apps</item>
+        <item>When launching a new app on the box, previous ones are closed — nothing piles up in the background.</item>
+        <item>Box is not responding</item>
+        <item>1) Is the receiver running on the box? 2) Port 8080? 3) Same network? 4) Turn off AP Isolation on the router. 5) Find IP.</item>
+        <item>Box unreachable after router reboot</item>
+        <item>The router may have changed the box IP (DHCP). Fix: reserve the IP for the box in router settings (DHCP reservation) or tap Find IP.</item>
+        <item>Receiver unreachable after box reboot</item>
+        <item>Open the receiver manually once after installing (an Android limitation) — autostart works by itself afterwards.</item>
+        <item>Installing the receiver on Android TV</item>
+        <item>On Sony/TCL/Philips/Xiaomi TV and Chromecast with Google TV: allow installs from unknown sources for your file manager, install the receiver APK, open it once. Its icon will appear in the TV app list. Disable the sleep timer (Device settings → Sleep) so the server works at night. See the port on the receiver screen and set it in the phone app. The receiver can update itself too: when a new version is out, a Download and install card appears on its screen.</item>
+    </string-array>
+</resources>

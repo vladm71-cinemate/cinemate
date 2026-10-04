@@ -1,0 +1,320 @@
+<resources>
+    <string name="app_name">Cinemate</string>
+
+    <!-- Navigation -->
+    <string name="nav_catalog">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_upcoming">Upcoming</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Catalog -->
+    <string name="filter_movies">Movies</string>
+    <string name="filter_tv">TV Shows</string>
+    <string name="filter_year">Year</string>
+    <string name="filter_year_any">Any</string>
+    <string name="filter_genres">Genres</string>
+    <string name="filter_genres_count">Genres (%1$d)</string>
+    <string name="filter_countries">Countries</string>
+    <string name="filter_excluded_count">Hidden: %1$d</string>
+    <string name="filter_included_count">Only: %1$d</string>
+    <string name="filter_sort_popularity">Most popular</string>
+    <string name="filter_sort_rating">Top rated</string>
+    <string name="filter_sort_newest">Newest first</string>
+    <string name="filter_sort_oldest">Oldest first</string>
+    <string name="filter_sort_votes">Most votes</string>
+    <string name="catalog_empty">Nothing found.\nTry changing the filters.</string>
+    <string name="catalog_error">Error: %1$s</string>
+    <string name="common_retry">Retry</string>
+    <string name="load_more_error">Failed to load more</string>
+
+    <!-- Search -->
+    <string name="search_hint">Find a movie or TV show…</string>
+    <string name="search_language_hint">Search in Russian or English</string>
+    <string name="search_history_title">Search history</string>
+    <string name="search_history_clear">Clear</string>
+    <string name="search_history_empty">Your search history will appear here</string>
+    <string name="search_no_results">Nothing found</string>
+    <string name="search_error">Error: %1$s</string>
+
+    <!-- Details -->
+    <string name="details_favorite_add">Add to favorites</string>
+    <string name="details_favorite_added">In favorites</string>
+    <string name="details_await_add">Await</string>
+    <string name="details_await_added">Awaiting ✓</string>
+    <string name="details_track_add">Track</string>
+    <string name="details_track_added">Tracking ✓</string>
+    <string name="details_more">More info</string>
+    <string name="details_less">Hide details</string>
+    <string name="details_show_actors">Cast</string>
+    <string name="details_hide_actors">Hide cast</string>
+    <string name="details_actors_empty">No cast information</string>
+    <string name="details_show_keywords">Show keywords</string>
+    <string name="details_hide_keywords">Hide keywords</string>
+    <string name="details_keywords_empty">No keywords</string>
+    <string name="details_similar_title">Similar</string>
+    <string name="details_similar_empty">Nothing similar</string>
+    <string name="details_no_overview">Description is not available in this language yet</string>
+    <string name="details_votes">%1$d votes</string>
+    <string name="details_status">Status</string>
+    <string name="details_budget">Budget</string>
+    <string name="details_revenue">Revenue</string>
+    <string name="details_studios">Studios</string>
+    <string name="details_countries">Countries</string>
+    <string name="details_languages">Languages</string>
+
+    <!-- Torrents -->
+    <string name="watch_button">Watch</string>
+    <string name="torrents_title">Torrents: %1$s</string>
+    <string name="torrents_mode_phone_play">Mode: play on this phone (TorrServe MatriX)</string>
+    <string name="torrents_mode_tv_list">Mode: list is shown on TV (tap to send the list)</string>
+    <string name="torrents_mode_phone">Mode: pick and play from the phone</string>
+    <string name="torrents_sort_seeds">by seeds</string>
+    <string name="torrents_sort_size">by size</string>
+    <string name="torrents_sort_date">by date</string>
+    <string name="torrents_exact">Exact search</string>
+    <string name="torrents_node">Node: %1$s</string>
+    <string name="torrents_node_fallback">Node: %1$s (auto-switched)</string>
+    <string name="torrents_searching">Searching torrents…</string>
+    <string name="torrents_none">No torrents found</string>
+    <string name="torrents_close">Close</string>
+    <string name="torrents_stop_tv">Stop on TV</string>
+    <string name="torrents_sent_tv">📺 Torrent list is on TV (%1$d items) — use the remote</string>
+    <string name="torrents_started_tv">▶ Playing on TV: %1$s</string>
+    <string name="torrents_started_phone">▶ Playing on phone: %1$s</string>
+    <string name="torrents_no_magnet_app">❌ No app for magnet links found. Install TorrServe MatriX.</string>
+    <string name="torrents_stop_done">⏹ Stopped on TV</string>
+    <string name="tv_box_unreachable">❌ TV Box unreachable</string>
+    <string name="tv_box_no_address">❌ No TV Box address set (Settings → Watch on TV)</string>
+
+    <!-- Upcoming -->
+    <string name="upcoming_empty_hint">Mark movies with “Await” and shows with “Track”\non their pages — they will appear here</string>
+    <string name="upcoming_movies_title">Awaited movies</string>
+    <string name="upcoming_series_title">Tracked shows</string>
+    <string name="upcoming_date_unknown">Date unknown</string>
+    <string name="upcoming_waiting_data">Waiting for data…</string>
+    <string name="upcoming_finished">Finished</string>
+    <string name="upcoming_released_today">Released today</string>
+    <string name="upcoming_in_days">In %1$d days</string>
+
+    <!-- Favorites -->
+    <string name="favorites_empty">Movies and shows you like\nwill appear here</string>
+    <string name="favorites_movie">movie</string>
+    <string name="favorites_tv">show</string>
+
+    <!-- Settings: general -->
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_home_view">Home layout</string>
+    <string name="settings_home_view_grid2">Grid, 2 per row (large posters)</string>
+    <string name="settings_home_view_grid3">Grid, 3 per row</string>
+    <string name="settings_home_view_list">List (poster on the left, title and year)</string>
+    <string name="settings_home_view_grid2_short">Grid, 2 per row</string>
+    <string name="settings_home_view_grid3_short">Grid, 3 per row</string>
+    <string name="settings_home_view_list_short">List</string>
+    <string name="settings_language">App language</string>
+    <string name="settings_original_titles">Show original titles</string>
+    <string name="settings_about">About</string>
+    <string name="settings_app_subtitle">Movie and TV catalog powered by TMDb</string>
+    <string name="settings_author">© 2026 · Author: Vlad</string>
+    <string name="settings_write_author">Email the author</string>
+    <string name="settings_data_by">Data and posters provided by:</string>
+    <string name="settings_help">How to use</string>
+
+    <!-- Proxy -->
+    <string name="proxy_title">TMDb proxy</string>
+    <string name="proxy_mode_auto_short">Auto</string>
+    <string name="proxy_mode_always_short">Always via proxy</string>
+    <string name="proxy_mode_off_short">Off</string>
+    <string name="proxy_mode_auto">Auto (recommended): direct, falls back to proxy on failure</string>
+    <string name="proxy_mode_always">Always via proxy</string>
+    <string name="proxy_mode_off">Off (direct only)</string>
+    <string name="proxy_custom_title">Custom proxy</string>
+    <string name="proxy_custom_hint">Public proxies may stop working. A personal one is more reliable — free, 5 minutes on Cloudflare Workers (see Help). Empty field = built-in.</string>
+    <string name="proxy_address">Proxy address</string>
+
+    <!-- API key -->
+    <string name="settings_api_key_title">Your TMDb API key</string>
+    <string name="settings_api_key_using_default">Using the built-in key</string>
+    <string name="settings_api_key_using_custom">Using your key</string>
+    <string name="settings_api_key_save">Save</string>
+    <string name="settings_api_key_reset">Reset</string>
+    <string name="settings_api_key_saved">Saved — applies to next requests</string>
+    <string name="settings_api_key_v4">API Read Access Token</string>
+    <string name="settings_api_key_v3">API Key</string>
+    <string name="settings_api_key_or">or</string>
+    <string name="settings_api_key_one_field">Fill in only one of the fields</string>
+
+    <!-- Watched -->
+    <string name="watched_title">Watched</string>
+    <string name="watched_subtitle">History of what you played on TV via “Watch”.</string>
+    <string name="watched_open">Open “Watched”</string>
+
+    <!-- Backup -->
+    <string name="backup_title">Settings backup</string>
+    <string name="backup_subtitle">Save all settings (nodes, proxy, box addresses, eyes, keys, layout) into one file — to move to a new phone or as a backup. Import replaces current settings.</string>
+    <string name="backup_export">Export</string>
+    <string name="backup_import">Import</string>
+    <string name="backup_saved">✅ Settings saved to file</string>
+    <string name="backup_restored">✅ Settings restored from file</string>
+
+    <!-- Watch on TV -->
+    <string name="tv_section_title">Watch on TV</string>
+    <string name="tv_enable_switch">Playback buttons on movie pages</string>
+    <string name="tv_enable_hint">Turn on to get TV Box app buttons and the “Watch” (torrents) button on movie pages.</string>
+    <string name="tv_play_where">Where to play (“Watch”)</string>
+    <string name="tv_play_where_box">On the TV Box (as before)</string>
+    <string name="tv_play_where_phone">On this phone (TorrServe MatriX required)</string>
+    <string name="tv_connection_unknown">Connection not checked</string>
+    <string name="tv_connection_checking">Checking connection…</string>
+    <string name="tv_connection_ok">Box is online</string>
+    <string name="tv_connection_fail">Box is not responding</string>
+    <string name="tv_connection_ok_with">✅ Box is online: %1$s</string>
+    <string name="tv_connection_fail_with">❌ Box is not responding (checked: %1$s)</string>
+    <string name="tv_connection_no_address">❌ No box address set</string>
+    <string name="tv_eyes_title">Remote buttons (launch apps on the box)</string>
+    <string name="tv_eyes_hint">Each button on a movie page launches its own app on the box — like service buttons on a remote.</string>
+    <string name="tv_eye_button_1">Button 1 (amber)</string>
+    <string name="tv_eye_button_2">Button 2 (red)</string>
+    <string name="tv_eye_button_3">Button 3 (green)</string>
+    <string name="tv_eye_button_4">Button 4 (blue)</string>
+    <string name="tv_eye_assign">Assign</string>
+    <string name="tv_eye_change">Change</string>
+    <string name="tv_eye_unassigned">Not assigned</string>
+    <string name="tv_pick_title">Choose an app</string>
+    <string name="tv_pick_from_box">Apps from the box:</string>
+    <string name="tv_pick_from_box_loading">Loading from the box…</string>
+    <string name="tv_pick_from_box_empty">List is empty</string>
+    <string name="tv_pick_presets">Known players:</string>
+    <string name="tv_pick_custom">Other… (enter manually)</string>
+    <string name="tv_pick_done">Done</string>
+    <string name="tv_pick_cancel">Cancel</string>
+    <string name="tv_pick_repeat">Retry</string>
+    <string name="tv_box_address_title">TV Box address</string>
+    <string name="tv_box_address_main">Box IP (primary)</string>
+    <string name="tv_box_address_spare">Box IP (spare)</string>
+    <string name="tv_box_port">Port</string>
+    <string name="tv_box_address_hint">One address is enough. Both are checked on send — the working one wins.</string>
+    <string name="tv_discover">Find box automatically</string>
+    <string name="tv_discover_scanning">Searching…</string>
+    <string name="tv_discover_stop">Stop</string>
+    <string name="tv_discover_scan_note">Scanning the network (up to 8 seconds)…</string>
+    <string name="tv_discover_use">Use %1$s</string>
+    <string name="tv_check_button">Check</string>
+    <string name="tv_close_apps">Close previous apps</string>
+    <string name="tv_close_apps_hint">Before launching a new app the previous ones are closed — nothing piles up on the box.</string>
+    <string name="tv_torrents_where">Torrent list</string>
+    <string name="tv_torrents_where_phone">On the phone (pick and play from the phone)</string>
+    <string name="tv_torrents_where_tv">On TV (the list opens on the TV, controlled by remote)</string>
+    <string name="tv_search_mode_title">Torrent search</string>
+    <string name="tv_search_mode_title_only">Title only (reliable)</string>
+    <string name="tv_search_mode_title_year">Title + year (better for remakes)</string>
+    <string name="tv_nodes_title">Torrent nodes</string>
+    <string name="tv_nodes_hint">Search servers. The active one is used first; on failure search automatically continues with the next one (if enabled below).</string>
+    <string name="tv_nodes_builtin">built-in</string>
+    <string name="tv_nodes_add">Add node</string>
+    <string name="tv_nodes_check_all">Check all</string>
+    <string name="tv_nodes_alive">alive (%1$d torrents)</string>
+    <string name="tv_nodes_dead">not responding</string>
+    <string name="tv_nodes_autoswitch">Auto-switch to a live node</string>
+    <string name="tv_delete_node">Delete node</string>
+    <string name="tv_requires_receiver">Requires the Cinemate Receiver app on the TV Box (same Wi-Fi network) — only for the “On TV Box” mode.</string>
+    <string name="tv_no_address_short">❌ No TV Box address</string>
+    <string name="tv_started">Launched on TV</string>
+    <string name="tv_eye_no_app">No app assigned for button %1$d (Settings → Watch on TV)</string>
+    <string name="tv_no_address_long">No TV Box address set (Settings → Watch on TV)</string>
+    <string name="tv_box_unreachable_checked">❌ Box unreachable (checked: %1$s)</string>
+    <string name="tv_node_dialog_title">New node</string>
+    <string name="tv_node_name">Name</string>
+    <string name="tv_node_address">Address</string>
+    <string name="tv_node_address_hint">With https:// or without — the scheme is added automatically.</string>
+    <string name="tv_node_key">API key (if needed)</string>
+    <string name="tv_node_add">Add</string>
+    <string name="tv_node_error_empty">Node address is empty</string>
+    <string name="tv_node_error_dup">This node is already in the list</string>
+
+    <!-- Attribution -->
+    <string name="tmdb_attribution">This product uses the TMDb API but is not endorsed or certified by TMDb.</string>
+    <string name="seasons_all">All</string>
+    <string name="seasons_one">Season %1$d</string>
+    <string name="quality_all">All</string>
+    <string name="torrents_none_by_filters">No torrents match the filters</string>
+    <string name="net_mode_title">Catalog internet</string>
+    <string name="net_mode_wifi">Wi-Fi (system default)</string>
+    <string name="net_mode_cellular">Mobile network (Wi-Fi untouched)</string>
+    <string name="net_mode_cellular_warn">TMDb traffic (API + posters) will go over mobile data even while on Wi-Fi. Wi-Fi stays connected — the TV Box link is unaffected. Mind mobile data usage: posters are heavy. If a DPI/VPN tool (ByeByeDPI etc.) intercepts all traffic, this mode may not work.</string>
+    <string name="net_mode_cellular_active">✅ Mobile network captured — catalog goes via cellular</string>
+    <string name="net_mode_cellular_unavailable">❌ Mobile network unavailable — using the default path (Wi-Fi). Check that mobile data is on.</string>
+    <string name="net_mode_cellular_waiting">Waiting for mobile network…</string>
+    <string name="proxy_add">Add</string>
+    <string name="proxy_remove">Remove proxy</string>
+    <string name="proxy_list_empty">List is empty — only built-in proxies are used. Your own (a Worker in 5 min, see Help) is the most reliable.</string>
+    <string name="update_available">New version available: %1$s</string>
+    <string name="update_download_install">Download and install</string>
+    <string name="update_failed">Failed to download the update</string>
+    <string name="help_main_title">Main sections</string>
+    <string name="help_bypass_title">Bypassing blocks</string>
+    <string name="help_tv_title">Watching on TV</string>
+    <string name="dns_mode_auto">Auto (recommended): tests all DNS, best becomes active</string>
+    <string name="dns_mode_custom">Custom DNS (only your addresses)</string>
+    <string name="dns_mode_off">Disable override (router/provider DNS)</string>
+    <string name="dns_subtitle_auto">Auto — best of the list is active</string>
+    <string name="dns_subtitle_custom">Custom DNS: %1$s</string>
+    <string name="dns_subtitle_off">Off — router/provider DNS</string>
+    <string name="dns_hint">If the provider blocks via DNS — choose Auto: the app tests all DNS entries and picks the best. Or enter your own in Custom DNS (like on a router: 76.76.2.11, 8.8.8.8...). If everything already works — Disable override: DNS is not touched, requests go via router/provider like any app (system Private DNS is respected).</string>
+    <string name="dns_list_empty">List is empty — add at least one DNS.</string>
+    <string name="dns_add_label">Add DNS</string>
+    <string name="dns_add_placeholder">76.76.2.11 or https://dns.google/resolve</string>
+    <string name="dns_test_button">Check DNS</string>
+    <string name="proxy_test_button">Check proxies</string>
+    <string name="common_hide">Hide</string>
+    <string name="dns_footer">Built-in DNS: ControlD (76.76.2.11 / 76.76.10.11), Google, Quad9, AdGuard, DNS.SB, Mullvad, Google DoH, Cloudflare DoH. Router: the same DNS can be set on the router — then it covers every device at home.</string>
+    <string name="dns_system_report">System DNS (provider/router)</string>
+    <string name="status_post_production">Post Production</string>
+    <string name="status_in_production">In Production</string>
+    <string name="status_planned">Planned</string>
+    <string name="status_rumored">Rumored</string>
+    <string name="status_returning">Returning Series</string>
+    <string name="status_ended">Ended</string>
+    <string name="status_canceled">Canceled</string>
+    <string name="person_born">Born: %1$s</string>
+    <string name="person_bio_show">Show full biography</string>
+    <string name="person_bio_hide">Hide biography</string>
+    <string name="person_cast_credits">On-screen credits</string>
+    <string name="person_crew_credits">Behind the camera</string>
+    <string name="dept_acting">Actor</string>
+    <string name="dept_directing">Director</string>
+    <string name="dept_writing">Writer</string>
+    <string name="dept_production">Producer</string>
+    <string name="dept_camera">Cinematographer</string>
+    <string name="dept_sound">Composer</string>
+    <string name="dept_art">Production Designer</string>
+    <string name="watched_empty">What you played on TV via Watch will appear here</string>
+    <string name="watched_clear">Clear</string>
+    <string name="common_back">Back</string>
+    <string name="notif_dialog_title">Release notifications</string>
+    <string name="notif_dialog_text">Cinemate will notify you when a movie from your Await list is released or a new episode of a tracked show airs.\n\nAllow notifications?</string>
+    <string name="notif_allow">Allow</string>
+    <string name="notif_later">Not now</string>
+    <string name="parser_autoswitched">⚠ Active node did not respond — switched to: %1$s</string>
+    <string name="search_all">All</string>
+    <string name="section_content_lang">Description language (TMDb)</string>
+    <string name="section_dns">DNS (bypass blocks)</string>
+    <string name="cd_sort">Sort</string>
+    <string name="cd_delete">Delete</string>
+    <string name="btn_add">Add</string>
+    <string name="cd_close">Close</string>
+    <string name="status_released">Released</string>
+    <string name="cd_clear_field">Clear field</string>
+    <string name="cache_title">Image cache</string>
+    <string name="cache_hint">Poster cache size (MB, 10–500). Bigger cache — fewer re-downloads. Applied after app restart.</string>
+    <string name="cache_apply">Apply</string>
+    <string name="cache_applied_restart">Size saved — takes effect after restart</string>
+    <string name="cache_clear">Clear image cache</string>
+    <string name="cache_cleared">Cache cleared (freed %1$d MB)</string>
+    <string name="cache_mb">MB</string>
+    <string name="cache_usage">Used: %1$d of %2$d MB</string>
+    <string name="cd_view_toggle">List view</string>
+</resources>

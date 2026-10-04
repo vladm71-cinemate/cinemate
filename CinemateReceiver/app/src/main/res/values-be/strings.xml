@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_waiting">Сервер працуе. Чаканне каманд з тэлефона…</string>
+    <string name="btn_diag">Дыягностыка партоў</string>
+    <string name="btn_change_port">Змяніць порт</string>
+    <string name="diag_title">Дыягностыка партоў
+Актуальны: %1$s</string>
+    <string name="diag_hint">Выбраны порт упішыце і ў праграме на тэлефоне
+(Налады → Прагляд на ТБ → Порт).</string>
+    <string name="port_title">Змяніць порт
+Тэкушы: %1$s</string>
+    <string name="port_now"> (зараз працуе)</string>
+    <string name="port_busy"> — заняты</string>
+    <string name="port_free"> — свабодны</string>
+    <string name="port_manual">Увесці ўручную…</string>
+    <string name="port_manual_title">Порт уручную</string>
+    <string name="port_hint">1024–65535</string>
+    <string name="port_apply">Ужыць</string>
+    <string name="common_cancel">Скасаваць</string>
+    <string name="common_close">Закрыць</string>
+    <string name="common_error">⚠ памылка: %1$s</string>
+    <string name="port_changed">Порт зменены на %1$d</string>
+    <string name="port_free_short">свабодны</string>
+    <string name="port_free_recommended">свабодны ← рэкамендуецца</string>
+    <string name="port_busy_chosen">заняты (твой выбар)</string>
+    <string name="port_busy_owner">заняты (%1$s)</string>
+    <string name="port_busy_plain">заняты</string>
+    <string name="port_receiver_here">← тут працуе Cinemate Receiver</string>
+    <string name="diag_free_list">Свабодныя: %1$s</string>
+    <string name="diag_no_free">Свабодных партоў не знойдзена</string>
+    <string name="log_update_title">Даступная новая версія: %1$s</string>
+    <string name="log_update_btn">Спампаваць і ўсталяваць</string>
+    <string name="log_update_downloading">Спампоўваю…</string>
+    <string name="log_update_confirm">Пацвердзіце ўстаноўку ў дыялогу</string>
+    <string name="log_update_failed">Не ўдалося — паўтарыць</string>
+    <string name="tv_sort_seeds">па сідах</string>
+    <string name="tv_sort_size">па памеры</string>
+    <string name="tv_sort_date">па даце</string>
+    <string name="tv_sort_label">Сартаванне: %1$s  ·  %2$d %3$s</string>
+    <string name="tv_footer">ОК — глядзець у TorrServe MatriX   ·   Меню — сартаванне   ·   Назад — выхад</string>
+    <string name="torrent_default_title">Раздачы</string>
+    <string name="torrent_default_item">раздача</string>
+
+    <plurals name="tv_items">
+        <item quantity="one">раздача</item>
+        <item quantity="few">раздачы</item>
+        <item quantity="many">раздач</item>
+        <item quantity="other">раздач</item>
+    </plurals>
+    <string name="filter_all">Усе</string>
+</resources>

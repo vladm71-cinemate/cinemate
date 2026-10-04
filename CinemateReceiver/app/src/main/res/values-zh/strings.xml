@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_waiting">服务器运行中。等待手机指令…</string>
+    <string name="btn_diag">端口诊断</string>
+    <string name="btn_change_port">更换端口</string>
+    <string name="diag_title">端口诊断
+当前: %1$s</string>
+    <string name="diag_hint">所选端口也要填到手机应用里
+(设置 → 电视观看 → 端口)。</string>
+    <string name="port_title">更换端口
+当前: %1$s</string>
+    <string name="port_now"> (正在使用)</string>
+    <string name="port_busy"> — 被占用</string>
+    <string name="port_free"> — 空闲</string>
+    <string name="port_manual">手动输入…</string>
+    <string name="port_manual_title">手动输入端口</string>
+    <string name="port_hint">1024–65535</string>
+    <string name="port_apply">应用</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_close">关闭</string>
+    <string name="common_error">⚠ 错误: %1$s</string>
+    <string name="port_changed">端口已改为 %1$d</string>
+    <string name="port_free_short">空闲</string>
+    <string name="port_free_recommended">空闲 ← 推荐</string>
+    <string name="port_busy_chosen">被占用 (你选择的)</string>
+    <string name="port_busy_owner">被占用 (%1$s)</string>
+    <string name="port_busy_plain">被占用</string>
+    <string name="port_receiver_here">← Cinemate Receiver 正在此运行</string>
+    <string name="diag_free_list">空闲: %1$s</string>
+    <string name="diag_no_free">未找到空闲端口</string>
+    <string name="log_update_title">有新版本: %1$s</string>
+    <string name="log_update_btn">下载并安装</string>
+    <string name="log_update_downloading">下载中…</string>
+    <string name="log_update_confirm">请在对话框中确认安装</string>
+    <string name="log_update_failed">失败 — 重试</string>
+    <string name="tv_sort_seeds">按做种数</string>
+    <string name="tv_sort_size">按大小</string>
+    <string name="tv_sort_date">按日期</string>
+    <string name="tv_sort_label">排序: %1$s  ·  %2$d %3$s</string>
+    <string name="tv_footer">OK — 在 TorrServe MatriX 中观看   ·   菜单 — 排序   ·   返回 — 退出</string>
+    <string name="torrent_default_title">种子</string>
+    <string name="torrent_default_item">种子</string>
+
+    <plurals name="tv_items">
+        <item quantity="other">条种子</item>
+    </plurals>
+    <string name="filter_all">全部</string>
+</resources>

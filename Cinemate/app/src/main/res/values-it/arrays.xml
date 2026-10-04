@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>USA</item><item>Regno Unito</item><item>Russia</item><item>Francia</item><item>Germania</item>
+        <item>Italia</item><item>Spagna</item><item>India</item><item>Giappone</item><item>Corea del Sud</item>
+        <item>Cina</item><item>Hong Kong</item><item>Canada</item><item>Australia</item><item>Brasile</item>
+        <item>Messico</item><item>Argentina</item><item>Svezia</item><item>Norvegia</item><item>Danimarca</item>
+        <item>Finlandia</item><item>Polonia</item><item>Turchia</item><item>Thailandia</item><item>Iran</item>
+        <item>Egitto</item><item>EAU</item><item>Arabia Saudita</item><item>Ucraina</item><item>Bielorussia</item>
+    </string-array>
+    <string-array name="help_main">
+        <item>Home</item>
+        <item>Catalogo di film e serie TV. In alto l’interruttore Film/Serie TV, sotto i filtri: anno, generi, paesi e ordinamento. Il pulsante Paesi: Nascosti — non mostrare i paesi scelti; Solo — mostrare esclusivamente loro. Scorri verso il basso per caricare altri.</item>
+        <item>Vista</item>
+        <item>Griglia di 2/3 per riga o elenco — in Impostazioni, Vista home. Vale anche per la filmografia degli attori.</item>
+        <item>Ricerca</item>
+        <item>Russo e inglese. La cronologia tiene fino a 50 ricerche; tocca una voce per ripetere la ricerca.</item>
+        <item>Scheda</item>
+        <item>Preferiti, Attendi (film non ancora usciti), Segui (serie TV). Sotto: Dettagli, Cast, Simili, Parole chiave. Il pulsante Guarda — torrent.</item>
+        <item>Lingua app</item>
+        <item>Interfaccia in 9 lingue. Si sceglie nelle Impostazioni; Come sistema usa la lingua del telefono.</item>
+        <item>Lingua descrizioni (TMDb)</item>
+        <item>In quale lingua TMDb restituisce descrizioni e generi. Se manca la traduzione, TMDb dà l’inglese.</item>
+        <item>Visti</item>
+        <item>Cronologia delle riproduzioni TV via Guarda. Tocca una riga per eliminarla.</item>
+        <item>Backup impostazioni</item>
+        <item>Esporta/Importa tutte le impostazioni in un file (passaggio a un telefono nuovo): nodi, proxy, DNS, indirizzi box, pulsanti, chiavi, vista, modalità internet del catalogo. Cronologia ricerche e Visti non si trasferiscono.</item>
+        <item>Aggiornamento app</item>
+        <item>Una volta al giorno l’app controlla in silenzio GitHub Releases. Se c’è una nuova versione, nelle Impostazioni compare una scheda con Scarica e installa: l’APK viene scaricato e si apre l’installer di sistema — basta confermare. Nulla viene installato senza la tua conferma.</item>
+    </string-array>
+    <string-array name="help_bypass">
+        <item>Passo 1 — DNS sul router</item>
+        <item>Imposta sul router i DNS 8.8.8.8 e 1.1.1.1 (o 76.76.2.11 — ControlD) — spesso basta e vale per tutti i dispositivi di casa. Così fa l’autore.</item>
+        <item>DNS nell’app</item>
+        <item>Modalità Auto: prova tutti i DNS (integrati + tuoi), il migliore diventa attivo, con commutazione automatica in caso di guasti. DNS personale: solo i tuoi indirizzi. Disattiva sostituzione: il DNS non si tocca — le richieste vanno via router/provider come per qualsiasi app (basta quando non ci sono blocchi). Il pulsante Verifica DNS mostra ogni voce con i tempi; la prima riga è il DNS di sistema del provider, per confronto.</item>
+        <item>Proxy TMDb</item>
+        <item>Elenco di proxy personali senza limiti (indirizzo con schema: https://… o http://…). L’app trova uno funzionante e gli resta finché vive; se muore, prova il successivo (tuoi + integrati). La modalità Sempre li verifica anche all’avvio. Il tuo Worker in 5 minuti: workers.cloudflare.com → Create Worker → codice: addEventListener(\"fetch\", e => { e.respondWith(fetch(new URL(e.request.url).pathname.slice(1) + new URL(e.request.url).search, { headers: e.request.headers })) }); → Deploy → indirizzo nel campo.</item>
+        <item>Internet del catalogo</item>
+        <item>Wi-Fi / Rete mobile. Modalità Rete mobile: il traffico TMDb va sui dati mobili anche con il telefono in Wi-Fi (DPI severo del provider di casa). Il Wi-Fi non si disconnette — il collegamento col TV Box sopravvive. Occhio al consumo dati.</item>
+    </string-array>
+    <string-array name="help_tv">
+        <item>Dove riprodurre</item>
+        <item>TV Box o questo telefono (serve TorrServe MatriX — il player si sceglie nelle sue impostazioni).</item>
+        <item>Pulsanti telecomando (occhi 1–4)</item>
+        <item>Quattro pulsanti colorati nella scheda. Ognuno avvia la PROPRIA app sul box — come i pulsanti Netflix del telecomando. Assegnazione dall’elenco app preso direttamente dal box.</item>
+        <item>Guarda</item>
+        <item>Ricerca torrent sui nodi; tocco — riproduzione via TorrServe MatriX. L’elenco può stare sul telefono o sulla TV (si naviga col telecomando, OK — guarda, Menu — ordine seed/dimensione/data). Se il nodo attivo cade, commutazione automatica su uno vivo che diventa l’attivo. I chip Stagione e 1080p sopra l’elenco filtrano i torrent a cascata: scegliere una stagione restringe le qualità, scegliere una qualità restringe le stagioni.</item>
+        <item>Nodi torrent</item>
+        <item>Nodo attivo con pulsante radio; Verifica tutti mostra attività e numero di torrent. Puoi aggiungere il tuo nodo.</item>
+        <item>Chiudi le app precedenti</item>
+        <item>All’avvio di una nuova app sul box le precedenti vengono chiuse — nulla si accumula in background.</item>
+        <item>Il box non risponde</item>
+        <item>1) Il ricevitore è aperto sul box? 2) Porta 8080? 3) Stessa rete? 4) Disattiva AP Isolation nel router. 5) «Trova IP».</item>
+        <item>Box non raggiungibile dopo il riavvio del router</item>
+        <item>Il router può aver cambiato l’IP del box (DHCP). Soluzione: prenota l’IP del box nel router (prenotazione DHCP) o tocca Trova IP.</item>
+        <item>Ricevitore non raggiungibile dopo il riavvio del box</item>
+        <item>Apri il ricevitore a mano una volta dopo l’installazione (limite Android) — poi l’avvio automatico funziona da sé.</item>
+        <item>Installare il ricevitore su Android TV</item>
+        <item>Su Sony/TCL/Philips/Xiaomi TV e Chromecast con Google TV: consenti l’installazione da fonti sconosciute per il tuo gestore file, installa l’APK del ricevitore, aprilo una volta. L’icona comparirà nell’elenco app della TV. Disattiva il timer di spegnimento (Impostazioni dispositivo → Sospensione) perché il server lavori di notte. La porta si legge sulla schermata del ricevitore e si inserisce nell’app del telefono. Anche il ricevitore si aggiorna da solo: con una nuova versione compare sulla sua schermata una scheda Scarica e installa.</item>
+    </string-array>
+</resources>

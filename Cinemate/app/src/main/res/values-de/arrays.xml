@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>USA</item><item>Großbritannien</item><item>Russland</item><item>Frankreich</item><item>Deutschland</item>
+        <item>Italien</item><item>Spanien</item><item>Indien</item><item>Japan</item><item>Südkorea</item>
+        <item>China</item><item>Hongkong</item><item>Kanada</item><item>Australien</item><item>Brasilien</item>
+        <item>Mexiko</item><item>Argentinien</item><item>Schweden</item><item>Norwegen</item><item>Dänemark</item>
+        <item>Finnland</item><item>Polen</item><item>Türkei</item><item>Thailand</item><item>Iran</item>
+        <item>Ägypten</item><item>VAE</item><item>Saudi-Arabien</item><item>Ukraine</item><item>Weißrussland</item>
+    </string-array>
+    <string-array name="help_main">
+        <item>Start</item>
+        <item>Film- und Serienkatalog. Oben der Schalter Filme/Serien, darunter Filter: Jahr, Genres, Länder und Sortierung. Taste Länder: Ausblenden — gewählte Länder nicht zeigen; Nur — ausschließlich sie zeigen. Weiter nach unten wischen — es lädt nach.</item>
+        <item>Ansicht</item>
+        <item>Raster mit 2/3 pro Reihe oder Liste — in den Einstellungen unter Startansicht. Gilt auch für die Filmografie der Schauspieler.</item>
+        <item>Suche</item>
+        <item>Russisch und Englisch. Verlauf bis 50 Anfragen; Tippen wiederholt die Suche.</item>
+        <item>Filmseite</item>
+        <item>Favoriten, Erwarten (bei unveröffentlichten Filmen), Verfolgen (bei Serien). Darunter: Mehr Infos, Besetzung, Ähnlich, Schlagwörter. Taste Ansehen — Torrents.</item>
+        <item>App-Sprache</item>
+        <item>Oberfläche in 9 Sprachen. In den Einstellungen wählbar; Wie System nutzt die Telefonsprache.</item>
+        <item>Beschreibungssprache (TMDb)</item>
+        <item>In welcher Sprache TMDb Beschreibungen und Genres liefert. Fehlt eine Übersetzung, liefert TMDb Englisch.</item>
+        <item>Gesehen</item>
+        <item>Verlauf der Wiedergaben am TV über Ansehen. Tippen löscht den Eintrag.</item>
+        <item>Einstellungen sichern</item>
+        <item>Export/Import aller Einstellungen in einer Datei (Umzug aufs neue Telefon): Nodes, Proxies, DNS, Box-Adressen, Tasten, Schlüssel, Ansicht, Katalog-Internet-Modus. Suchverlauf und Gesehen werden nicht übertragen.</item>
+        <item>App-Aktualisierung</item>
+        <item>Einmal täglich prüft die App stumm GitHub Releases. Gibt es eine neue Version, erscheint in den Einstellungen eine Karte mit Herunterladen und installieren: das APK wird geladen und der System-Installer geöffnet — nur bestätigen. Ohne Bestätigung wird nichts installiert.</item>
+    </string-array>
+    <string-array name="help_bypass">
+        <item>Schritt 1 — DNS im Router</item>
+        <item>Trage im Router DNS 8.8.8.8 und 1.1.1.1 (oder 76.76.2.11 — ControlD) ein — oft reicht das und gilt für alle Geräte zuhause. So macht es der Autor.</item>
+        <item>DNS in der App</item>
+        <item>Modus Auto: testet alle DNS (eingebaut + eigene), der beste wird aktiv, bei Fehlern automatischer Wechsel. Eigener DNS: nur deine Adressen. Override aus: DNS wird nicht angetastet — Anfragen laufen wie bei jeder App über Router/Provider (reicht, wenn keine Sperren bestehen). Die Taste DNS prüfen zeigt jeden Eintrag mit Zeit; die erste Zeile ist der System-DNS des Providers zum Vergleich.</item>
+        <item>TMDb-Proxy</item>
+        <item>Liste eigener Proxies ohne Limit (Adresse mit Schema: https://… oder http://…). Die App findet einen funktionierenden und bleibt bei ihm, solange er läuft; fällt er aus, kommt der nächste (eigene + eingebaute). Modus Immer prüft Proxies zusätzlich beim Start. Eigener Worker in 5 Minuten: workers.cloudflare.com → Create Worker → Code: addEventListener(\"fetch\", e => { e.respondWith(fetch(new URL(e.request.url).pathname.slice(1) + new URL(e.request.url).search, { headers: e.request.headers })) }); → Deploy → Adresse ins Feld.</item>
+        <item>Katalog-Internet</item>
+        <item>WLAN / Mobilfunk. Modus Mobilfunk: TMDb-Traffic läuft über mobile Daten, auch wenn das Telefon im WLAN ist (harter DPI des Heimproviders). WLAN bleibt verbunden — die TV-Box-Verbindung bleibt. Mobiles Datenvolumen beachten.</item>
+    </string-array>
+    <string-array name="help_tv">
+        <item>Wo abspielen</item>
+        <item>TV-Box oder dieses Telefon (TorrServe MatriX nötig — der Player wird in dessen Einstellungen gewählt).</item>
+        <item>Fernbedienungs-Tasten (Augen 1–4)</item>
+        <item>Vier farbige Tasten auf der Filmseite. Jede startet IHRE eigene App auf der Box — wie Netflix-Tasten auf der Fernbedienung. Zuweisung aus der App-Liste, direkt von der Box geholt.</item>
+        <item>Ansehen</item>
+        <item>Torrent-Suche über Nodes; Tippen — Wiedergabe über TorrServe MatriX. Die Liste kann am Telefon oder am TV erscheinen (mit der Fernbedienung scrollen, OK — ansehen, Menü — Sortierung Seeder/Größe/Datum). Fällt die aktive Node aus, wird automatisch zur nächsten lebenden gewechselt und sie wird zur aktiven. Die Chips Staffel und 1080p über der Liste filtern Torrents als Kaskade: Staffel wählen verengt die Qualitäten, Qualität wählen verengt die Staffeln.</item>
+        <item>Torrent-Nodes</item>
+        <item>Aktive Node per Radio-Taste; Alle prüfen zeigt Erreichbarkeit und Torrent-Zahl. Eigene Node kann hinzugefügt werden.</item>
+        <item>Vorherige Apps schließen</item>
+        <item>Beim Start einer neuen App auf der Box werden die bisherigen geschlossen — im Hintergrund sammelt sich nichts.</item>
+        <item>Box antwortet nicht</item>
+        <item>1) Läuft der Empfänger auf der Box? 2) Port 8080? 3) Gleiches Netz? 4) AP Isolation im Router ausschalten. 5) IP finden.</item>
+        <item>Box nach Router-Neustart nicht erreichbar</item>
+        <item>Der Router hat evtl. die Box-IP geändert (DHCP). Lösung: IP für die Box im Router reservieren (DHCP-Reservierung) oder IP finden tippen.</item>
+        <item>Empfänger nach Box-Neustart nicht erreichbar</item>
+        <item>Öffne den Empfänger nach der Installation einmal manuell (Android-Einschränkung) — danach läuft der Autostart von selbst.</item>
+        <item>Empfänger auf Android TV installieren</item>
+        <item>Auf Sony/TCL/Philips/Xiaomi TV und Chromecast mit Google TV: Installation aus unbekannten Quellen für den Dateimanager erlauben, Empfänger-APK installieren, einmal öffnen. Das Symbol erscheint in der App-Liste des Fernsehers. Ruhezähler ausschalten (Geräteeinstellungen → Ruhemodus), damit der Server nachts läuft. Port auf dem Empfänger-Bildschirm ablesen und in der Telefon-App eintragen. Der Empfänger aktualisiert sich auch selbst: bei einer neuen Version erscheint auf seinem Bildschirm eine Karte Herunterladen und installieren.</item>
+    </string-array>
+</resources>

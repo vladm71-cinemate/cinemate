@@ -1,0 +1,9 @@
+build/
+.gradle/
+local.properties
+.idea/
+.kotlin/
+**/app/build/
+**/app/cinemate-release.jks
+**/CinemateReceiver-release.jks
+*.iml

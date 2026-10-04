@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Баннер для лончера Android TV / Google TV (рекомендация: 320x180dp) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <!-- Фон -->
+    <path android:fillColor="#101014" android:pathData="M0,0h320v180h-320z" />
+    <!-- Плёночная перфорация слева (мотив постера) -->
+    <path android:fillColor="#1A1A20" android:pathData="M14,18h16v18h-16z M14,48h16v18h-16z M14,78h16v18h-16z M14,108h16v18h-16z M14,138h16v18h-16z" />
+    <!-- Название -->
+    <path android:fillColor="#FFB43A" android:pathData="M56,58h30v10h-30z M56,74h58v10h-58z M56,90h44v10h-44z" />
+    <!-- RECEIVER -->
+    <path android:fillColor="#E6E1E5" android:pathData="M56,116h20v7h-20z M82,116h20v7h-20z M108,116h20v7h-20z M134,116h20v7h-20z M160,116h20v7h-20z M186,116h20v7h-20z" />
+    <!-- Точка-акцент -->
+    <path android:fillColor="#FFB43A" android:pathData="M262,72a14,14 0 1,0 28,0a14,14 0 1,0 -28,0" />
+</vector>
