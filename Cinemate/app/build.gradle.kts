@@ -25,8 +25,8 @@ android {
         applicationId = "com.cinemate.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 4
-        versionName = "1.0.3"
+        versionCode = 5
+        versionName = "1.0.4"
         buildConfigField("String", "TMDB_ACCESS_TOKEN", "\"$tmdbToken\"")
     }
 
