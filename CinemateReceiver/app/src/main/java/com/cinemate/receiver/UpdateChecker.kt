@@ -27,7 +27,7 @@ class UpdateChecker(private val context: Context) {
 
     companion object {
         /** "владелец/репозиторий". Пусто = проверка отключена. */
-        const val REPO = ""
+        const val REPO = "vladm71-cinemate/cinemate"
 
         private const val TIMEOUT_MS = 8000
         private const val DAY_MS = 24L * 60 * 60 * 1000

@@ -37,7 +37,7 @@ class UpdateChecker @Inject constructor(
 
     companion object {
         /** "владелец/репозиторий". Пусто = проверка отключена. */
-        const val REPO = ""
+        const val REPO = "vladm71-cinemate/cinemate"
 
         private const val TIMEOUT_MS = 8000
     }
