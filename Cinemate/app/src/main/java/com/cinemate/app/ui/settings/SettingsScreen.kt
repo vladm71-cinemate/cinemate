@@ -557,6 +557,15 @@ fun SettingsScreen(
             }
         }
         Spacer(Modifier.height(8.dp))
+
+        // Статус ручной проверки — виден всегда (обновлений нет / сбой)
+        updateStatus?.let { st ->
+            Text(
+                st,
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.primary
+            )
+        }
         updateInfo?.let { upd ->
             Surface(
                 shape = RoundedCornerShape(12.dp),
