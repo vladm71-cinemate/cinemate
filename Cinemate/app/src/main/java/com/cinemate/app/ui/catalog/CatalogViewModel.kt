@@ -75,9 +75,7 @@ class CatalogViewModel @Inject constructor(
                     contentType = type,
                     genreIds = emptySet(),
                     excludedCountries = emptySet(),
-                    includedCountries = emptySet(),
-                    airDateGte = null,
-                    sort = SortOption.POPULARITY
+                    includedCountries = emptySet()
                 )
             )
         }
